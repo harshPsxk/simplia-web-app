@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Logo from './assests/images/logo-simplia-reps.svg';
 import backRed from './assests/images/red-back.jpg';
+import dataAi from './assests/images/data-ai.gif';
 import { MenuOutlined } from '@ant-design/icons';
 
 import { FcDatabase } from "react-icons/fc";
@@ -110,13 +111,13 @@ function App() {
           Helpful Links
         </div>
 
-        <div className='text-6xl font-semibold text-customGrey/60 '>
+        <div className='text-5xl font-semibold text-customGrey/60 '>
           Resources for you
         </div>
 
-        <div className="flex justify-center space-x-20 mt-6">
+        <div className="flex justify-center space-x-12 mt-6">
           {/* First Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
               <div>
                 <FcMoneyTransfer style={{ fontSize: '48px' }} />
@@ -131,7 +132,7 @@ function App() {
           </div>
 
           {/* Second Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
               <div>
                 <FcDatabase style={{ fontSize: '48px' }} />
@@ -147,9 +148,9 @@ function App() {
         </div>
 
 
-        <div className="flex justify-center space-x-20 mt-6">
+        <div className="flex justify-center space-x-12 mt-6">
           {/* First Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
               <div>
                 <FcEnteringHeavenAlive style={{ fontSize: '48px' }} />
@@ -164,7 +165,7 @@ function App() {
           </div>
 
           {/* Second Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
               <div>
                 <FcGlobe style={{ fontSize: '48px' }} />
@@ -180,9 +181,9 @@ function App() {
         </div>
 
 
-        <div className="flex justify-center space-x-20 mt-6">
+        <div className="flex justify-center space-x-12 mt-6">
           {/* First Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
               <div>
                 <FcSms style={{ fontSize: '48px' }} />
@@ -198,7 +199,7 @@ function App() {
           </div>
 
           {/* Second Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
               <div>
                 <FcClapperboard style={{ fontSize: '48px' }} />
@@ -214,9 +215,9 @@ function App() {
         </div>
 
 
-        <div className="flex justify-center space-x-20 mt-6">
+        <div className="flex justify-center space-x-12 mt-6">
           {/* First Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
               <div>
                 <FcComboChart style={{ fontSize: '48px' }} />
@@ -231,7 +232,7 @@ function App() {
           </div>
 
           {/* Second Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
               <div>
                 <FcFaq style={{ fontSize: '48px' }} />
@@ -247,9 +248,9 @@ function App() {
         </div>
 
 
-        <div className="flex justify-center space-x-20 mt-6">
+        <div className="flex justify-center space-x-12 mt-6">
           {/* First Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
               <div>
                 <FcCurrencyExchange style={{ fontSize: '48px' }} />
@@ -264,7 +265,7 @@ function App() {
           </div>
 
           {/* Second Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
               <div>
                 <FcNeutralDecision style={{ fontSize: '48px' }} />
@@ -280,9 +281,9 @@ function App() {
         </div>
 
 
-        <div className="flex justify-center space-x-20 mt-6">
+        <div className="flex justify-center space-x-12 mt-6">
           {/* First Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
               <div>
                 <FcBusinessContact style={{ fontSize: '48px' }} />
@@ -303,8 +304,33 @@ function App() {
             Contact Us
           </button>
         </div>
-
       </div>
+
+      <div className="p-4 bg-customBodyThirdSection/50 flex items-center" style={{ display: 'grid', placeItems: 'center', height: '70vh' }}>
+        {/* Third Card */}
+        <div className='rounded-lg' style={{ width: '1400px', height: '350px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)', display: 'flex', alignItems: 'center' }}>
+          <div className="mr-4">
+            <img
+              src={dataAi}
+              alt="Data AI GIF"
+              style={{
+                width: '450px',
+                height: '350px',
+                borderRadius: '0.375rem'
+              }}
+            />
+          </div>
+
+          {/* Right side (Text Content) */}
+          <div className="flex-grow">
+            <p className="font-bold text-xl text-red-500/75">Introducing The Base App: Revolutionizing Data Management with AI</p>
+            <p className='text-customGrey/75 font-semibold'>
+              The quick brown fox jumps over the lazy dog.
+            </p>
+          </div>
+        </div>
+      </div>
+
 
     </div >
   );

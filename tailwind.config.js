@@ -40,6 +40,7 @@ module.exports = {
         customBorderPurple: '#78BDC4',
 
         customBodySecondSection: '#F5D5E0',
+        customBodyThirdSection: '#F8F8FF',
 
         customBlue: '#107DAC',
         customBlueHover: '#005073',
