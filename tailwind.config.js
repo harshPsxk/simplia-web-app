@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         'googleSansDisplay': ['Google Sans Display', 'sans'],
         'roboto': ['Roboto', 'sans'],
+        'open-sans-variable': ['Open Sans Variable', 'sans'],
       },
       colors: {
         // Add your custom color here
@@ -34,13 +35,15 @@ module.exports = {
         customPurple: '#800080',
         customPurplehover: '#BE29EC',
 
-        customBorderPurple: '#C874B2',
+        customPurpleTextCard: '#4E3E63',
 
-        customYellow: '#F5D5E0',
-        
+        customBorderPurple: '#78BDC4',
+
+        customBodySecondSection: '#F5D5E0',
+
         customBlue: '#107DAC',
         customBlueHover: '#005073',
-        
+
         mainBackgroundColor: '#FFE4ED'
       }
     }

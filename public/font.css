@@ -1,0 +1,17 @@
+/* font.css */
+
+@font-face {
+  font-family: 'Open Sans Variable';
+  src: url('./fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Define CSS rules that use the font-family */
+body {
+  font-family: 'Open Sans Variable', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Open Sans Variable', sans-serif;
+}

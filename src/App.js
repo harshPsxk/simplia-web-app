@@ -3,16 +3,20 @@ import './App.css';
 import Logo from './assests/images/logo-simplia-reps.svg';
 import backRed from './assests/images/red-back.jpg';
 import { MenuOutlined } from '@ant-design/icons';
-import { TfiMenuAlt } from "react-icons/tfi";
-import { BsCashCoin } from "react-icons/bs";
-import { SiWebmoney } from "react-icons/si";
-import { BsGlobeAmericas } from "react-icons/bs";
-import { MdOutlineQuestionAnswer } from "react-icons/md";
-import { MdVideoLibrary } from "react-icons/md";
-import { SiMarketo } from "react-icons/si";
+
+import { FcDatabase } from "react-icons/fc";
+import { FcMoneyTransfer } from "react-icons/fc";
+import { FcEnteringHeavenAlive } from "react-icons/fc";
+import { FcGlobe } from "react-icons/fc";
+import { FcSms } from "react-icons/fc";
 import { FcFaq } from "react-icons/fc";
-import { MdPaid } from "react-icons/md";
-import { GiArtificialHive } from "react-icons/gi";
+import { FcClapperboard } from "react-icons/fc";
+import { FcComboChart } from "react-icons/fc";
+import { FcCurrencyExchange } from "react-icons/fc";
+import { FcNeutralDecision } from "react-icons/fc";
+import { FcBusinessContact } from "react-icons/fc";
+
+
 
 
 function App() {
@@ -101,79 +105,92 @@ function App() {
       </div>
 
 
-      <div className='p-4 w-full bg-customYellow text-center rounded-lg'>
-        <div className='text-4xl font-semibold text-red-500'>
+      <div className='p-4 w-full bg-customBodySecondSection/75 text-center rounded-lg'>
+        <div className='text-4xl font-semibold text-red-500/60'>
           Helpful Links
         </div>
-        <div className='text-6xl font-semibold text-customGrey'>
+
+        <div className='text-6xl font-semibold text-customGrey/60 '>
           Resources for you
         </div>
-        <div className="flex justify-center space-x-4 mt-4">
+
+        <div className="flex justify-center space-x-20 mt-6">
           {/* First Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center group transition duration-300 ease-in-out hover:border-customBorderPurple" style={{ width: '600px' }}>
-            <div className="mr-4">
-              <BsCashCoin style={{ fontSize: '48px' }} />
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <div className="mr-4 flex items-center">
+              <div>
+                <FcMoneyTransfer style={{ fontSize: '48px' }} />
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-xl text-red-500">SEND PAYMENT LINK</p>
-              <p className='text-customGrey font-semibold'>Send customers this link for them to complete their first months payment</p>
+            <div className="flex-grow">
+              <p className="font-bold text-xl text-red-500/60 ">SEND PAYMENT LINK</p>
+              <p className='text-customGrey/60 font-bold'>
+                Send customers this link for them to complete their first months payment
+              </p>
             </div>
           </div>
 
           {/* Second Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center group transition duration-300 ease-in-out hover:border-customBorderPurple" style={{ width: '600px' }}>
-            <div className="mr-4">
-              <TfiMenuAlt style={{ fontSize: '48px' }} />
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <div className="mr-4 flex items-center">
+              <div>
+                <FcDatabase style={{ fontSize: '48px' }} />
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-xl text-red-500">SIMPLIA DECK</p>
-              <p className='text-customGrey font-semibold'>
+            <div className="flex-grow">
+              <p className="font-bold text-xl text-red-500/60">SIMPLIA DECK</p>
+              <p className='text-customGrey/60 font-bold'>
                 A detailed presentation on Simplia’s services and guarantees that everything is right
               </p>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center space-x-4 mt-4">
+
+        <div className="flex justify-center space-x-20 mt-6">
           {/* First Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center group transition duration-300 ease-in-out hover:border-customBorderPurple" style={{ width: '600px' }}>
-            <div className="mr-4">
-              <SiWebmoney style={{ fontSize: '48px' }} />
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <div className="mr-4 flex items-center">
+              <div>
+                <FcEnteringHeavenAlive style={{ fontSize: '48px' }} />
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-xl text-red-500">WEBSITE EXAMPLE</p>
-              <p className='text-customGrey font-semibold'>
-                Show customers websites Simplia has created related to their
-                industry
+            <div className="flex-grow">
+              <p className="font-bold text-xl text-red-500/60">WEBSITE EXAMPLE</p>
+              <p className='text-customGrey/60 font-bold'>
+                Show customers websites Simplia has created related to their industry
               </p>
             </div>
           </div>
 
           {/* Second Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center group transition duration-300 ease-in-out hover:border-customBorderPurple" style={{ width: '600px' }}>
-            <div className="mr-4">
-              <BsGlobeAmericas style={{ fontSize: '48px' }} />
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <div className="mr-4 flex items-center">
+              <div>
+                <FcGlobe style={{ fontSize: '48px' }} />
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-xl text-red-500">SIMPLIA WEBSITE</p>
-              <p className='text-customGrey font-semibold'>
-
-                The main Simplia.com website that includes testimonials and everything that validates all our claims
-
+            <div className="flex-grow">
+              <p className="font-bold text-xl text-red-500/60">SIMPLIA WEBSITE</p>
+              <p className='text-customGrey/60 font-bold'>
+                The main Simplia.com website that includes testimonials
               </p>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center space-x-4 mt-4">
+
+        <div className="flex justify-center space-x-20 mt-6">
           {/* First Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center group transition duration-300 ease-in-out hover:border-customBorderPurple" style={{ width: '600px' }}>
-            <div className="mr-4">
-              <MdOutlineQuestionAnswer style={{ fontSize: '48px' }} />
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <div className="mr-4 flex items-center">
+              <div>
+                <FcSms style={{ fontSize: '48px' }} />
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-xl text-red-500">Q&A LINK</p>
-              <p className='text-customGrey font-semibold'>
+            <div className="flex-grow">
+              <p className="font-bold text-xl text-red-500/60">Q&A LINK</p>
+              <p className='text-customGrey/60 font-bold'>
                 Monday – Friday: Every day at 11 am, join the live Q&amp;A
                 with Simplia’s CEO to learn how to sell and ask questions
               </p>
@@ -181,94 +198,115 @@ function App() {
           </div>
 
           {/* Second Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center group transition duration-300 ease-in-out hover:border-customBorderPurple" style={{ width: '600px' }}>
-            <div className="mr-4">
-              <MdVideoLibrary style={{ fontSize: '48px' }} />
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <div className="mr-4 flex items-center">
+              <div>
+                <FcClapperboard style={{ fontSize: '48px' }} />
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-xl text-red-500">SIMPLIA VIDEO</p>
-              <p className='text-customGrey font-semibold'>
-
-                Use this short video to show customers the value of our
-                services and commitments
-
+            <div className="flex-grow">
+              <p className="font-bold text-xl text-red-500/60">SIMPLIA VIDEO</p>
+              <p className='text-customGrey/60 font-bold'>
+                Use this short video to show customers the value of our services and commitments
               </p>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center space-x-4 mt-4">
+
+        <div className="flex justify-center space-x-20 mt-6">
           {/* First Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center group transition duration-300 ease-in-out hover:border-customBorderPurple" style={{ width: '600px' }}>
-            <div className="mr-4">
-              <SiMarketo style={{ fontSize: '48px' }} />
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <div className="mr-4 flex items-center">
+              <div>
+                <FcComboChart style={{ fontSize: '48px' }} />
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-xl text-red-500">TRACK SALES</p>
-              <p className='text-customGrey font-semibold'>
+            <div className="flex-grow">
+              <p className="font-bold text-xl text-red-500/60">TRACK SALES</p>
+              <p className='text-customGrey/60 font-bold'>
                 Use this Sales tracker to record each of your sales helping gain helpful insight for every element
               </p>
             </div>
           </div>
 
           {/* Second Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center group transition duration-300 ease-in-out hover:border-customBorderPurple" style={{ width: '600px' }}>
-            <div className="mr-4">
-              <FcFaq style={{ fontSize: '48px' }} />
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <div className="mr-4 flex items-center">
+              <div>
+                <FcFaq style={{ fontSize: '48px' }} />
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-xl text-red-500">FAQ</p>
-              <p className='text-customGrey font-semibold'>
-                Stil have questions check our faq's that will guide you with all your simple querries
+            <div className="flex-grow">
+              <p className="font-bold text-xl text-red-500/60">FAQ</p>
+              <p className='text-customGrey/60 font-bold'>
+                Still have questions? Check our FAQ's that will guide you with all your simple queries.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center space-x-4 mt-4">
+
+        <div className="flex justify-center space-x-20 mt-6">
           {/* First Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center group transition duration-300 ease-in-out hover:border-customBorderPurple" style={{ width: '600px' }}>
-            <div className="mr-4">
-              <MdPaid style={{ fontSize: '48px' }} />
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <div className="mr-4 flex items-center">
+              <div>
+                <FcCurrencyExchange style={{ fontSize: '48px' }} />
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-xl text-red-500">GET PAID</p>
-              <p className='text-customGrey font-semibold'>
-                Get set up with direct deposit and get paid weekly every
-                Friday for the previous week
+            <div className="flex-grow">
+              <p className="font-bold text-xl text-red-500/60">GET PAID</p>
+              <p className='text-customGrey/60 font-bold'>
+                Get set up with direct deposit and get paid weekly every Friday for the previous week
               </p>
             </div>
           </div>
 
           {/* Second Card */}
-          <div className="bg-white rounded-lg shadow-md p-4 flex items-center group transition duration-300 ease-in-out hover:border-customBorderPurple" style={{ width: '600px' }}>
-            <div className="mr-4">
-              <GiArtificialHive style={{ fontSize: '48px' }} />
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <div className="mr-4 flex items-center">
+              <div>
+                <FcNeutralDecision style={{ fontSize: '48px' }} />
+              </div>
             </div>
-            <div>
-              <p className="font-bold text-xl text-red-500">SMART AI</p>
-              <p className='text-customGrey font-semibold'>
-
-                The all-in-one search engine tool made with Smart Technology that give one stop solution for everything
+            <div className="flex-grow">
+              <p className="font-bold text-xl text-red-500/75">SMART AI</p>
+              <p className='text-customGrey/75 font-semibold'>
+                The all-in-one search engine tool made with Smart Technology that gives one-stop solution for everything
               </p>
             </div>
           </div>
-
         </div>
 
-        {/* Third Card */}
-        <div className="bg-white rounded-lg shadow-md mt-6 flex items-center justify-center" style={{ width: '300px', margin: '0 auto' }}>
-          <div className="mr-4">
-            <GiArtificialHive style={{ fontSize: '48px' }} />
-          </div>
-          <div>
-            <p className="font-bold text-xl text-red-500">NEW CARD</p>
-            <p className='text-customGrey font-semibold'>This is a new card below the existing ones</p>
+
+        <div className="flex justify-center space-x-20 mt-6">
+          {/* First Card */}
+          <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '800px', height: '150px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <div className="mr-4 flex items-center">
+              <div>
+                <FcBusinessContact style={{ fontSize: '48px' }} />
+              </div>
+            </div>
+            <div className="flex-grow">
+              <p className="font-bold text-xl text-red-500/75">REQUEST BROCHURES ? BUSINESS CARDS</p>
+              <p className='text-customGrey/75 font-semibold'>
+                Get customized printed and digital marketing material. Carry the tools you need to make a sale with you
+              </p>
+            </div>
           </div>
         </div>
+
+
+        <div className="mt-6 space-x-4">
+          <button className="w-80 rounded-full px-6 py-3 bg-red-500 text-customGreyOne font-bold hover:bg-red-700">
+            Contact Us
+          </button>
+        </div>
+
       </div>
 
-    </div>
+    </div >
   );
 }
 
