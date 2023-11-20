@@ -46,17 +46,17 @@ function App() {
         <nav className='ml-auto'>
           <ul className="flex space-x-6 items-center"> {/* Added 'items-center' */}
             <li>
-              <a href="#home" className="font-semibold text-xl text-customGrey hover:text-hoverGrey hover:bg-gray-100 rounded-lg p-2 transition-all block w-32 text-center">
+              <a href="#home" className="font-semibold text-xl text-customGrey/75 hover:text-hoverGrey hover:bg-gray-100 rounded-lg p-2 transition-all block w-32 text-center">
                 Home
               </a>
             </li>
             <li>
-              <a href="#faq" className="font-semibold text-xl text-customGrey hover:text-hoverGrey hover:bg-gray-100 rounded-lg p-2 transition-all block w-32 text-center">
+              <a href="#faq" className="font-semibold text-xl text-customGrey/75 hover:text-hoverGrey hover:bg-gray-100 rounded-lg p-2 transition-all block w-32 text-center">
                 Faq
               </a>
             </li>
             <li>
-              <a href="#blogs" className="font-semibold text-xl text-customGrey hover:text-hoverGrey hover:bg-gray-100 rounded-lg p-2 transition-all block w-32 text-center mr-20">
+              <a href="#blogs" className="font-semibold text-xl text-customGrey/75 hover:text-hoverGrey hover:bg-gray-100 rounded-lg p-2 transition-all block w-32 text-center mr-20">
                 Blogs
               </a>
             </li>
