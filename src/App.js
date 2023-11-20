@@ -44,7 +44,7 @@ function App() {
 
         {/* Navigation Menu on the right */}
         <nav className='ml-auto'>
-          <ul className="flex space-x-15">
+          <ul className="flex space-x-6 items-center"> {/* Added 'items-center' */}
             <li>
               <a href="#home" className="font-semibold text-xl text-customGrey hover:text-hoverGrey hover:bg-gray-100 rounded-lg p-2 transition-all block w-32 text-center">
                 Home
@@ -61,9 +61,19 @@ function App() {
               </a>
             </li>
 
-
-            <li><a href="#blogs" className=""><MenuOutlined className="text-customRed mt-4" />
-            </a></li>
+            {/* Wrap Search Bar and MenuOutlined in a div */}
+            <li>
+              <div className="flex items-center">
+                <Input.Search
+                  placeholder="Search"
+                  onSearch={value => console.log(value)}
+                  style={{ width: 250 }}
+                />
+                <a href="#blogs" className='ml-8 text-2xl'>
+                  <MenuOutlined className="text-customRed" />
+                </a>
+              </div>
+            </li>
           </ul>
         </nav>
 
