@@ -41,11 +41,16 @@ module.exports = {
 
         customBodySecondSection: '#F5D5E0',
         customBodyThirdSection: '#F8F8FF',
+        customBodyFourthSection: '#FFFAFA',
+        customBodyFifthSection: '#FFFCEE',
 
         customBlue: '#107DAC',
         customBlueHover: '#005073',
 
-        mainBackgroundColor: '#FFE4ED'
+        mainBackgroundColor: '#FFE4ED',
+
+        customBlueReadMore : '#81D4FA',
+        customBlueFooter : '#0072C5'
       }
     }
   },

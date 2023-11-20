@@ -3,6 +3,8 @@ import './App.css';
 import Logo from './assests/images/logo-simplia-reps.svg';
 import backRed from './assests/images/red-back.jpg';
 import dataAi from './assests/images/data-ai.gif';
+import smartSell from './assests/images/selling.gif';
+import tracking from './assests/images/tracking.gif';
 import { MenuOutlined } from '@ant-design/icons';
 
 import { FcDatabase } from "react-icons/fc";
@@ -16,11 +18,24 @@ import { FcComboChart } from "react-icons/fc";
 import { FcCurrencyExchange } from "react-icons/fc";
 import { FcNeutralDecision } from "react-icons/fc";
 import { FcBusinessContact } from "react-icons/fc";
+import { PiPhonePlusFill } from "react-icons/pi";
+import { MdOutlineMailOutline } from "react-icons/md";
 
+import blogImage1 from './assests/images/blog-one.gif'
+import blogImage2 from './assests/images/seo.gif';
+import blogImage3 from './assests/images/ai-website.gif'
 
+import joinus from './assests/images/joinus.png';
 
+import footerlogo from './assests/images/white-simplie-logo.webp';
+
+import { Input } from 'antd';
+
+import ReadMore from './components/ReadMore';
+import { smartTrackingContent, smartSellContent, introductionAi } from './content';
 
 function App() {
+
   return (
     <div className="App">
 
@@ -106,7 +121,7 @@ function App() {
       </div>
 
 
-      <div className='p-4 w-full bg-customBodySecondSection/75 text-center rounded-lg'>
+      <div className='p-4 w-full bg-customBodySecondSection/25 text-center rounded-lg'>
         <div className='text-4xl font-semibold text-red-500/60'>
           Helpful Links
         </div>
@@ -281,7 +296,7 @@ function App() {
         </div>
 
 
-        <div className="flex justify-center space-x-12 mt-6">
+        <div className="flex justify-center space-x-12 mt-8">
           {/* First Card */}
           <div className="bg-white rounded-lg shadow-md p-4 flex items-center hover:border border-customBorderPurple/50" style={{ width: '700px', height: '120px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
             <div className="mr-4 flex items-center">
@@ -300,38 +315,343 @@ function App() {
 
 
         <div className="mt-6 space-x-4">
-          <button className="w-80 rounded-full px-6 py-3 bg-red-500 text-customGreyOne font-bold hover:bg-red-700">
+          <button className="w-80 mt-8 mb-8 rounded-full px-6 py-3 bg-red-500 text-customGreyOne font-bold hover:bg-red-700">
             Contact Us
           </button>
         </div>
       </div>
 
-      <div className="p-4 bg-customBodyThirdSection/50 flex items-center" style={{ display: 'grid', placeItems: 'center', height: '70vh' }}>
+      <div className="p-4 bg-customBodyThirdSection/50 flex items-center" style={{ display: 'grid', placeItems: 'center', height: '120vh' }}>
         {/* Third Card */}
-        <div className='rounded-lg' style={{ width: '1400px', height: '350px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)', display: 'flex', alignItems: 'center' }}>
-          <div className="mr-4">
+        <div className='rounded-lg' style={{ width: '1400px', height: '300px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)', display: 'flex', alignItems: 'flex-start' }}>
+          <div className="mr-4 w-1/4">
             <img
               src={dataAi}
               alt="Data AI GIF"
               style={{
-                width: '450px',
-                height: '350px',
+                width: '400px',
+                height: '300px',
                 borderRadius: '0.375rem'
               }}
             />
           </div>
 
           {/* Right side (Text Content) */}
-          <div className="flex-grow">
-            <p className="font-bold text-xl text-red-500/75">Introducing The Base App: Revolutionizing Data Management with AI</p>
-            <p className='text-customGrey/75 font-semibold'>
-              The quick brown fox jumps over the lazy dog.
+          <div className="flex-grow flex flex-col justify-start w-3/4">
+            <p className="font-bold text-2xl text-red-500/75 mt-2">Introducing The Base App: Revolutionizing Data Management with AI</p>
+            <p className='text-customGrey/75 text-lg font-semibold mt-4'>
+              <ReadMore {...introductionAi} />
             </p>
+          </div>
+        </div>
+
+        <div className='rounded-lg' style={{ width: '1400px', height: '300px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)', display: 'flex', alignItems: 'flex-start' }}>
+          <div className="mr-4 w-1/4">
+            <img
+              src={smartSell}
+              alt="Data AI GIF"
+              style={{
+                width: '400px',
+                height: '300px',
+                borderRadius: '0.375rem'
+              }}
+            />
+          </div>
+
+          {/* Right side (Text Content) */}
+          <div className="flex-grow flex flex-col justify-start w-3/4">
+            <p className="font-bold text-xl text-red-500/75 mt-2 text-2xl">
+              Smart Sell</p>
+            <p className='text-customGrey/75 text-lg font-semibold mt-4'>
+              <ReadMore {...smartSellContent} />
+            </p>
+          </div>
+        </div>
+
+        <div className='rounded-lg' style={{ width: '1400px', height: '300px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)', display: 'flex', alignItems: 'flex-start' }}>
+          <div className="mr-4 w-1/4">
+            <img
+              src={tracking}
+              alt="Data AI GIF"
+              style={{
+                width: '400px',
+                height: '300px',
+                borderRadius: '0.375rem'
+              }}
+            />
+          </div>
+
+          {/* Right side (Text Content) */}
+          <div className="flex-grow flex flex-col justify-start w-3/4">
+            <p className="font-bold text-xl text-red-500/75 mt-2 text-2xl">
+              Smart Tracking
+            </p>
+            <p className='text-customGrey/75 text-lg font-semibold mt-4'>
+              <ReadMore {...smartTrackingContent} />
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="p-4 bg-customBodyFourthSection/50 flex items-center" style={{ display: 'grid', placeItems: 'center' }}>
+        <div className='text-4xl font-semibold text-red-500/60'>
+          Videos
+        </div>
+
+        <div className='text-5xl font-semibold text-customGrey/70 mt-4'>
+          Know More About Us
+        </div>
+
+        {/* Video Cards */}
+        <div className="flex justify-center space-x-20 mt-6 mb-6">
+          {/* Video Card 1 */}
+          <div className="bg-white rounded-lg shadow-md p-4" style={{ width: '450px', height: '280px', boxShadow: '0 4px 6px rgba(0, 0, 0, .2)' }}>
+            <video width="100%" height="100%" controls>
+              <source src="./assests/videos/SimpliaLaunch.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <div class="items-center flex justify-center mt-4 font-bold text-customGrey/70 text-3xl">
+              Simplia Launch
+            </div>
+          </div>
+
+          {/* Video Card 2 */}
+          <div className="bg-white rounded-lg shadow-md p-4" style={{ width: '450px', height: '280px', boxShadow: '0 4px 6px rgba(0, 0, 0, .2)' }}>
+            <video width="100%" height="100%" controls>
+              <source src="./assests/videos/SimpliaAgent.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <div class="items-center flex justify-center mt-4 font-bold text-customGrey/70 text-3xl">
+              Simplia Agent
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div className="p-4 bg-customBodyThirdSection/50 flex items-center" style={{ display: 'grid', placeItems: 'center' }}>
+        <div className='text-5xl font-semibold text-customGrey/70 mt-8'>
+          Blogs
+        </div>
+        <div className="flex justify-center space-x-20 mt-8">
+          {/* Blog Card 1 */}
+          <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center" style={{ width: '320px', height: '320px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <img
+              src={blogImage1}
+              alt=""
+              width="200"
+              height="150"
+              style={{ borderRadius: '0.375rem' }}
+            />
+            <p className="text-xl font-semibold mt-4">Customer Website Experience</p>
+            <button className="bg-customBlueReadMore text-white px-4 py-2 mt-6 rounded-lg">Read More</button>
+          </div>
+
+          {/* Blog Card 2 */}
+          <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center" style={{ width: '320px', height: '320px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <img
+              src={blogImage2}
+              alt=""
+              width="200"
+              height="150"
+              style={{ borderRadius: '0.375rem' }}
+            />
+            <p className="text-xl font-semibold mt-4">Why SEO Marketing</p>
+            <button className="bg-customBlueReadMore text-white px-4 py-2 mt-6 rounded-lg">Read More</button>
+          </div>
+
+          {/* Blog Card 3 */}
+          <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center" style={{ width: '320px', height: '320px', boxShadow: '0 4px 6px rgba(0, 0, 0, .4)' }}>
+            <img
+              src={blogImage3}
+              alt=""
+              width="200"
+
+              style={{ borderRadius: '0.375rem', height: "120" }}
+            />
+            <p className="text-xl font-semibold mt-4">AI Integrated Website</p>
+            <button className="bg-customBlueReadMore text-white px-4 py-2 mt-6 rounded-lg">Read More</button>
           </div>
         </div>
       </div>
 
+      <div className="p-4 bg-customBodyFifthSection/75">
+        <div className="flex justify-center items-center mt-20">
+          <div className="w-1/2 ml-20">
+            <div className="text-3xl font-semibold text-red-500/70">
+              Join Us
+            </div>
+            <div className="text-5xl font-semibold text-customGrey/80 mt-2">
+              Become a Reps Agent
+            </div>
 
+            <div className="text-xl font-medium text-customGrey/80 mt-2">
+              We are dedicated to helping sales agents like you earn more money and succeed in your career. Our team of experts provides the resources and support you need to reach your full potential. Whether you're just starting out or have been in sales for years, we have something for you.
+            </div>
+          </div>
+          <div className="ml-4 w-1/4">
+            <img
+              src={joinus}
+              alt="Data AI GIF"
+              style={{
+                width: '400px',
+                height: '300px',
+                borderRadius: '4px'
+              }}
+            />
+          </div>
+        </div>
+
+        <div className="text-2xl flex items-center justify-center font-semibold text-red-500/70 mt-10">
+          Take the first step towards success and join us today!
+        </div>
+
+        {/* Input Fields */}
+        <div className="ml-auto p-4 mt-4">
+          <div className="flex mb-4 space-x-4 items-center justify-center ">
+            <Input placeholder="First Name" style={{ width: '18%' }} />
+            <Input placeholder="Last Name" style={{ width: '18%' }} />
+          </div>
+          <div className="flex mt-6 space-x-4 items-center justify-center ">
+            <Input placeholder="Email" style={{ width: '18%' }} />
+            <Input placeholder="Mobile Number" style={{ width: '18%' }} />
+          </div>
+        </div>
+
+        <div className="text-xl flex items-center justify-center font-semibold text-red-500/70 mt-4">
+          <button className="w-40 h-8 mb-8 rounded-lg bg-red-500 text-customGreyOne font-bold hover:bg-red-700">
+            Submit
+          </button>
+        </div>
+
+
+      </div>
+
+      <div className='bg-customBlueFooter'>
+
+        <div className="pl-4 pt-10 pb-28 flex">
+          <div className="flex items-center justify-center w-1/6 pt-32 pb-18 border-r-4 border-white">
+            <img
+              src={footerlogo}
+              alt=""
+              width="200"
+              style={{ borderRadius: '0.375rem', height: "120" }}
+            />
+
+          </div>
+
+          <div className='w-5/6 mr-4 ml-4 flex'>
+
+            <div className='w-1/3'>
+              <div className='border-b-4 border-white font-bold text-white indent-1 tracking-wider pb-2'>
+                <p className='text-xl'>
+                  Contact Us
+                </p>
+                <p className='text-base font-semibold mt-1'>
+                  10801 National Blvd. Suite 500
+                </p>
+                <p className='text-base font-semibold mt-1'>
+                  Los Angeles California, 90064
+                </p>
+              </div>
+
+              <div className='flex mt-4'>
+                <div className='flex text-white text-2xl'>
+                  <PiPhonePlusFill />
+                  <div className='font-semibold text-white indent-1 tracking-wider text-base'>
+                    Phone: +1-866-806-4111
+                  </div>
+                </div>
+              </div>
+
+              <div className='flex mt-4'>
+                <div className='flex text-white text-2xl'>
+                  <MdOutlineMailOutline />
+                  <div className='font-semibold text-white indent-1 tracking-wider text-base'>
+                    info@simplia.com
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='w-1/4 ml-10'>
+              <div className='font-bold text-white indent-1 tracking-wider pb-2'>
+                <p className='text-xl'>
+                  Simplia
+                </p>
+                <p className='text-base font-semibold mt-1'>
+                  About Us
+                </p>
+                <p className='text-base font-semibold mt-1'>
+                  Our Way
+                </p>
+                <p className='text-base font-semibold mt-1'>
+                  Terms of Use
+                </p>
+                <p className='text-base font-semibold mt-1'>
+                  Privacy Policy
+                </p>
+              </div>
+            </div>
+
+            <div className='w-1/4 '>
+              <div className='font-bold text-white indent-1 tracking-wider pb-2'>
+                <p className='text-xl'>
+                  Business
+                </p>
+                <p className='text-base font-semibold mt-1'>
+                  Our Services
+                </p>
+                <p className='text-base font-semibold mt-1'>
+                  Our ShowCase
+                </p>
+              </div>
+            </div>
+
+            <div className='w-1/4 '>
+              <div className='font-bold text-white indent-1 tracking-wider pb-2'>
+                <p className='text-xl'>
+                  Personal
+                </p>
+                <p className='text-base font-semibold mt-1'>
+                  Coming Soon
+                </p>
+              </div>
+            </div>
+
+            <div className='w-1/4 '>
+              <div className='font-bold text-white indent-1 tracking-wider pb-2'>
+                <p className='text-xl'>
+                  Marketplace
+                </p>
+                <p className='text-base font-semibold mt-1'>
+                  Coming Soon
+                </p>
+              </div>
+            </div>
+
+            <div className='w-1/4 '>
+              <div className='font-bold text-white indent-1 tracking-wider pb-2'>
+                <p className='text-xl'>
+                  Access
+                </p>
+                <p className='text-base font-semibold mt-1'>
+                  Sign In
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-2xl flex items-center justify-center font-semibold text-white mt-2 pb-14">
+          Copyright © 2023 Simplia, Inc.
+        </div>
+      </div>
     </div >
   );
 }
