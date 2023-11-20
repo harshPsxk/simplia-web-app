@@ -5,7 +5,7 @@ import backRed from './assests/images/red-back.jpg';
 import dataAi from './assests/images/data-ai.gif';
 import smartSell from './assests/images/selling.gif';
 import tracking from './assests/images/tracking.gif';
-import { MenuOutlined } from '@ant-design/icons';
+import DropdownMenu from './components/DropdownMenu';
 
 import { FcDatabase } from "react-icons/fc";
 import { FcMoneyTransfer } from "react-icons/fc";
@@ -69,8 +69,8 @@ function App() {
                   onSearch={value => console.log(value)}
                   style={{ width: 250 }}
                 />
-                <a href="#blogs" className='ml-8 text-2xl'>
-                  <MenuOutlined className="text-customRed" />
+                <a href="#blogs" className="ml-8 text-2xl">
+                  <DropdownMenu />
                 </a>
               </div>
             </li>
